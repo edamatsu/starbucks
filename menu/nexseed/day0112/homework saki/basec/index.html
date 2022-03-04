@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    ここに書いた内容が画面に表示される
+</body>
+<div>
+    <h1>見出し１</h1>
+    <h2>見出し２</h2>
+    <h3>見出し３</h3>
+    <h4>見出し４</h4>
+    <h5>見出し５</h5>
+    <h6>見出し６</h6>
+</div>
+<ul>
+    <li>項目A</li>
+    <li>項目B</li>
+</ul>
+
+<ol>
+    <li>項目１</li>
+    <li>項目２</li>
+</ol>
+<div>
+    <table border="1">
+        <caption>表題</caption>
+        <thead>
+            <tr>
+                <th>ヘッダ１</th>
+                <th>ヘッダ２</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>１－１</td>
+                <td>２－１</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <a href="https://nexseed.net">Nexseed</a>
+</div>
+<div>
+    <a href="#section-1">概要へ移動します</a>
+    <!--移動したことがわかりやすいように改行をいれてます-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 id="section-01">概要</h2>
+</div>
+<div>
+    <img src="http://nexseed.net/images/logo.jpg" alt="Nexseed_logo">
+</div>
+<div>
+    <form action="" method="post">
+        <div>
+            <!--テキストボックス-->
+            メール:<input type="text" name="email"><br>
+            <!--パスワード用のテキストボックス-->
+            パスワード:<input type="password" name="password"><br>
+        </div>
+        <div>
+            <!--セレクトボックス-->
+            <select name="list">
+                <option value="item1">アイテム１</option>
+                <option value="item2">アイテム２</option>   
+                <option value="item3">アイテム３</option>
+            </select>
+        </div>
+        <div>
+            <!--チェックボックス-->
+            <input type="checkbox" name="fruit" value="apple">りんご
+            <input type="checkbox" name="fruit" value="orange">みかん 
+        </div>
+        <div>
+            <!--ラジオボックス-->
+            <input type="radio" name="region" value="kanto">関東
+            <input type="radio" name="region" value="tokai">東海
+            <input type="radio" name="ragim" value="tyubu">中部
+            <input type="radio" name="ragin" value="tyugoku">中国
+            <input type="radio" name="ragin" value="kyusyu">九州
+        </div>
+        <!--フォームデータ送信ボタン-->
+        <input type="submit" value="送信">
+    </form>
+</div>
+
+</html>

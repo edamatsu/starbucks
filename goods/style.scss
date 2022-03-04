@@ -1,0 +1,69 @@
+header{
+    width: auto;
+    height: 13vh;
+    background-color: rgba(102, 57, 17, 0.562);
+}
+
+.header_left{
+    display: flex;
+    align-items: center;
+}
+
+.header_left img{
+    margin-top: 5px;
+    width: 80px;
+    height: 80px;
+}
+
+main{
+    padding: 5% 15%;
+    height: auto;
+    width: 100%;
+    background-image: url('https://i.pinimg.com/originals/1b/27/55/1b2755bab4774ca5582c20f8ef5a1e78.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title{
+    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(73, 37, 3);
+}
+
+.title2{
+    padding-top: 150px;
+}
+  
+.love {
+    height: 30px;
+}
+
+.love2 {
+    height: 12px;
+}
+
+.btn1{
+
+    a {
+        color: #462103;
+        font-family: "Caveat", cursive;
+        text-decoration: none;
+    }
+
+} 
+
+.btn1{
+    font-size: 18px;
+    display: inline-block;
+    padding: 0.4em 1em 0.2em;
+    color: #ffffff;
+    border: #ffffff dashed 1px;
+    -webkit-box-shadow: 0 0 0 0.2em #e9cc96;
+    box-shadow: 0 0 0 0.2em #e9cc96;
+    border-radius: 2.5px;
+    background-color: #e9cc96;
+    cursor: pointer;
+    -webkit-transform: translateX(1100px) translateY(20px);
+    transform: translateX(1100px) translateY(20px);
+}

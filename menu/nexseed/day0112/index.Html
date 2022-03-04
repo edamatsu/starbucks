@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_practuce</title>
+</head>
+<body>
+    <div> 
+        <h1>見出し１</h1>
+        <h2>見出し２</h2>
+        <h3>見出し３</h3>
+        <h4>見出し４</h4>
+        <h5>見出し５</h5>
+        <h6>見出し６</h6>
+        <p>ここが最初の段落です<br>今日は寒い
+        </p>
+        <ul>
+            <li>リンゴ</li>
+            <li>オレンジ</li>
+            <li>すいか</li>
+        </ul>
+        <ol>
+            <li>犬</li>
+            <li>猫</li>
+            <li>猿</li>
+        </ol>
+    </div>      
+    <div>
+        <table>
+            <caption>表題</caption>
+            <thead>
+                <tr>
+                    <th>ヘッダ１</th>
+                    <th>ヘッダ２</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>１－２</td>
+                    <td>２－１</td>
+                </tr>
+                <tr>
+                    <td>１－２</td>
+                    <td>２－２</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+    <div>
+        <a href="https://nexseed.net" target="_blank">nexseed</a>
+    </div>    
+    <div>
+        <a href="#section-01">概要へ移動します。</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 id="serection-01">概要</h2>
+    </div>
+    <div>
+        <img src="sample3.png" alt="Nexseed_logo">
+    </div>
+    <div>
+        <form action="" method="post">
+            <div>
+                <!--テキストボックス-->
+                メール:<input type="password" name="password"><br>
+                パスワード：<input type="password" name="password"><br>
+            </div>
+
+            <div>
+                <!--セレクトボックス-->
+                <select name="list">
+                    <option value="item1">アイテム１</option>
+                    <option value="item2">アイテム２</option>
+                    <option value="item3">アイテム３</option>
+                </select>
+            </div>
+            <div>
+                <!--チェックボクッス-->
+                <input type="checkbox" name="fruit" value="apple">りんご
+                <input type="checkbox" name="fruit" value="orenge">みかん
+            </div>
+            <div>
+                <!--ラジオボックス-->
+                <input type="radio" name="region" value="kannto">関東
+                <input type="radio" name="region" value="toukai">東海
+                <input type="radio" name="region" value="tyubu">中部
+                <input type="radio" name="region" value="tyugoku">中国
+                <input type="radio" name="region" value="kyusyu">九州
+            </div>
+            <!-- フォームデータ送信ボタン-->はいち
+            <input type="submit" value="送信">
+        </form>
+    </div>
+    </div>
+</body> 
+</html>
