@@ -181,6 +181,7 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 5%;
 }
 
 .item {
@@ -210,7 +211,7 @@ h2 {
   background-color: black;
   letter-spacing: 5px;
   line-height: 1.5;
-  display: inline-block;
+  margin-right: 40%;
 }
 
 .coffee {
@@ -226,14 +227,18 @@ h3 {
   margin: 2% 80% 2% 2%;
 }
 
+p {
+  padding: 2% 2% 2% 2%;
+}
+
 .slide {
   margin: auto;
-  width: 90%;
+  width: 85%;
   height: 40%;
 }
 
 .slideimg {
-  height: 50px;
+  height: 40px;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
@@ -241,6 +246,11 @@ h3 {
 .slideimg:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
+}
+
+.drip {
+  width: 250px;
+  height: 350px;
 }
 
 .slick-track {
