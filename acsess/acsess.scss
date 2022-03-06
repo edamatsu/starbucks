@@ -1,0 +1,53 @@
+body{
+    background-color: rgba(132, 19, 19, 0.537);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hind', sans-serif;
+}
+//==========アクセス=============================================
+article{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 40%;
+    padding: 3% ;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+h1{
+    text-align: center;
+    font-size: 200%;
+    letter-spacing: 7px;
+    background: linear-gradient(transparent 60%, black 70%);
+}
+.tel{
+    color: aqua;
+}
+tr{
+    font-size: 120%;
+}
+th{
+    text-align: start;
+}
+td{
+    padding-left: 22%;
+}
+//=============ボタン======================================
+$blue: black;
+.btn {
+    font-size: 150%;
+    margin: 3%;
+    border-color: $blue;
+    color: #fff;
+    box-shadow: 0 0 40px 40px $blue inset, 0 0 0 0 $blue;
+    transition: all 150ms ease-in-out;
+    
+    &:hover {
+      box-shadow: 0 0 10px 0 $blue inset, 0 0 10px 4px $blue;
+    }
+  }

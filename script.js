@@ -2,12 +2,6 @@ $(function(){
     $(".top_silde img:not(:first-child)").hide();
     setInterval(function() {
       $(".top_silde img:first-child").fadeOut(1000).next("img").fadeIn(2000)},5000);
-    $(function () {
-      $('.burger-btn').on('click', function () {
-        $('.burger-btn').toggleClass('close');
-        $('.nav-wrapper').toggleClass('slide-in');
-        $('body').toggleClass('noscroll'); 
-      });
     });
     $('.slide').slick({
       infinite:false,
@@ -23,5 +17,22 @@ $(function(){
           },
         ],
     });
- 
-  });
+    (function($) {
+      var $nav   = $('#navArea');
+      var $btn   = $('.toggle_btn');
+      var $mask  = $('#mask');
+      var open   = 'open'; // class
+      // menu open close
+      $btn.on( 'click', function() {
+        if ( ! $nav.hasClass( open ) ) {
+          $nav.addClass( open );
+        } else {
+          $nav.removeClass( open );
+        }
+      });
+      // mask close
+      $mask.on('click', function() {
+        $nav.removeClass( open );
+      });
+    } )(jQuery);
+    $('.coffee').addClass('on');
