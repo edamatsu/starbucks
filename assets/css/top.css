@@ -72,20 +72,11 @@ nav {
   z-index: 3;
 }
 
-.hum {
-  height: 600px;
-  width: 400px;
-}
-
-.open nav {
-  left: 0;
-}
-
-nav .inner {
+nav.inner {
   padding: 25px;
 }
 
-nav .inner ul {
+nav.inner ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -98,14 +89,14 @@ nav .inner ul {
           flex-direction: column;
 }
 
-nav .inner ul li {
+nav.inner ul li {
   position: relative;
   margin: 0;
   margin-right: 30%;
   border-bottom: 1px solid #333;
 }
 
-nav .inner ul li a {
+nav.inner ul li a {
   color: #333;
   font-size: 105%;
   padding: 2%;
@@ -114,8 +105,17 @@ nav .inner ul li a {
           transition-duration: 0.2s;
 }
 
-nav .inner ul li a:hover {
+nav.inner ul li a:hover {
   background: #e4e4e4;
+}
+
+.hum {
+  height: 600px;
+  width: 400px;
+}
+
+.open nav {
+  left: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -272,8 +272,8 @@ nav .inner ul li a:hover {
 .toggle_btn {
   display: block;
   position: fixed;
-  top: 30px;
-  left: 30px;
+  top: 0px;
+  left: 0px;
   width: 60px;
   height: 30px;
   -webkit-transform: translate(0, 0);
@@ -281,7 +281,7 @@ nav .inner ul li a:hover {
   -webkit-transition: all .5s;
   transition: all .5s;
   cursor: pointer;
-  z-index: 3;
+  z-index: 2;
 }
 
 .open .toggle_btn {
@@ -389,8 +389,10 @@ h1 {
   margin: 2% 5% 2% 2%;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
-  -webkit-animation: yeah 5s infinite;
-          animation: yeah 5s infinite;
+  -webkit-animation: yeah 6s;
+          animation: yeah 6s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
 }
 
 @-webkit-keyframes yeah {
@@ -448,8 +450,10 @@ span {
   margin: 5% 0 5% 0;
   color: gray;
   position: relative;
-  -webkit-animation: bounce 2s infinite;
-          animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s;
+          animation: bounce 2s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
 }
 
 .arrow svg {
@@ -599,7 +603,7 @@ h3 {
   padding: 20px 0;
 }
 
-/*slick setting*/
+/*===============slick setting================*/
 .slick-prev:before,
 .slick-next:before {
   color: white;
@@ -628,7 +632,7 @@ button:before {
           animation: SlideIn 5s;
 }
 
-/* CSSアニメーションの設定 */
+/* lastアニメーションの設定 */
 @-webkit-keyframes SlideIn {
   0% {
     opacity: 0;
